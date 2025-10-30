@@ -13,33 +13,23 @@ public class FinishButtonHandler : MonoBehaviour
     void Awake()
     {
         button = GetComponent<Button>();
-        if (button != null)
-            button.onClick.AddListener(OnFinishButtonClicked);
     }
 
     // Call this from Dialogue when initial sequence ends
     public void ShowButton()
     {
         gameObject.SetActive(true);
-        Debug.Log("Finish button activated: " + gameObject.activeSelf);
     }
 
 
-    private void OnFinishButtonClicked()
+    public void OnFinishButtonClicked()
     {
         // Hide the Finish button
         gameObject.SetActive(false);
 
         // Trigger the next dialogue (if set)
-        if (dialogueManager != null && nextDialogue != null && nextDialogue.Length > 0)
-        {
-            dialogueManager.StartDialogue(nextDialogue);
-        }
-
-
+        dialogueManager.StartDialogue(nextDialogue);
         quizzing.SetActive(true);
-        optionBoxes.SetActive(true);
-        Debug.Log("Option boxes are now visible!");
 
         // Optional: enable player control or other interactions
         // GameManager.Instance.EnablePlayerControl();

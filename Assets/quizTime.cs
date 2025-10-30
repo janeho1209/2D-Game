@@ -8,6 +8,7 @@ public class DialogueQuizHandler : MonoBehaviour
     public Button[] quizOptions;          // Assign 3 buttons in Inspector
     public TMP_Text[] quizButtonTexts;    // Assign their text fields (matching order)
     public Dialogue dialogue;             // Reference your Dialogue manager
+    public GameObject options;
 
     [System.Serializable]
     public struct QuizLine
@@ -33,6 +34,7 @@ public class DialogueQuizHandler : MonoBehaviour
         score = 0;
         current = 0;
         ShowNextQuestion();
+        options.SetActive(true);
     }
 
     private void ShowNextQuestion()

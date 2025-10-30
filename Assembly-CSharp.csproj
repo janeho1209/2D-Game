@@ -72,7 +72,6 @@
     <Compile Include="Assets\clicking.cs" />
     <Compile Include="Assets\finishButton.cs" />
     <Compile Include="Assets\dialogue.cs" />
-    <Compile Include="Assets\displayOption.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
