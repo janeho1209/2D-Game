@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\2D Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|C:\\2D Game\\assets\\finishbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|solutionrelative:assets\\finishbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|C:\\2D Game\\assets\\dragginginteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|solutionrelative:assets\\dragginginteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|c:\\2d game\\assets\\quiztime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|solutionrelative:assets\\quiztime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|c:\\2d game\\assets\\finishbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|solutionrelative:assets\\finishbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|C:\\2D Game\\assets\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|solutionrelative:assets\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|C:\\2D Game\\assets\\safenumbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|solutionrelative:assets\\safenumbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|C:\\2D Game\\assets\\quiztime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|solutionrelative:assets\\quiztime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|C:\\2D Game\\assets\\dragginginteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|solutionrelative:assets\\dragginginteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|C:\\2D Game\\assets\\safenumbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|solutionrelative:assets\\safenumbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BD99DA7-BD93-6366-344B-4F2C33A41684}|Assembly-CSharp.csproj|C:\\2D Game\\assets\\clicking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "quizTime.cs",
               "DocumentMoniker": "C:\\2D Game\\Assets\\quizTime.cs",
               "RelativeDocumentMoniker": "Assets\\quizTime.cs",
@@ -54,18 +54,17 @@
               "RelativeToolTip": "Assets\\quizTime.cs",
               "ViewState": "AgIAAHAAAAAAAAAAAAA0wIUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T00:16:00.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T00:16:00.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "finishButton.cs",
               "DocumentMoniker": "C:\\2D Game\\Assets\\finishButton.cs",
               "RelativeDocumentMoniker": "Assets\\finishButton.cs",
               "ToolTip": "C:\\2D Game\\Assets\\finishButton.cs",
               "RelativeToolTip": "Assets\\finishButton.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwBgAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T09:39:45.933Z",
               "EditorCaption": ""
@@ -78,22 +77,23 @@
               "RelativeDocumentMoniker": "Assets\\dialogue.cs",
               "ToolTip": "C:\\2D Game\\Assets\\dialogue.cs",
               "RelativeToolTip": "Assets\\dialogue.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAQwFwAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwCgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T05:45:55.788Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "draggingInteract.cs",
               "DocumentMoniker": "C:\\2D Game\\Assets\\draggingInteract.cs",
               "RelativeDocumentMoniker": "Assets\\draggingInteract.cs",
               "ToolTip": "C:\\2D Game\\Assets\\draggingInteract.cs",
               "RelativeToolTip": "Assets\\draggingInteract.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAA9wCIAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T19:07:42.137Z"
+              "WhenOpened": "2025-10-28T19:07:42.137Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -109,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "safeNumbers.cs",
               "DocumentMoniker": "C:\\2D Game\\Assets\\safeNumbers.cs",
               "RelativeDocumentMoniker": "Assets\\safeNumbers.cs",

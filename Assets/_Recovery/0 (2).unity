@@ -1836,7 +1836,7 @@ Transform:
   m_GameObject: {fileID: 1139962135}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1894,17 +1894,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -3.2209196, y: 0.36551642}
+  m_Offset: {x: -0.03095305, y: 0.21757597}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.18023257, y: 0.52260983}
     oldSize: {x: 10, y: 10}
     newSize: {x: 10, y: 10}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.62775326, y: 1.181952}
+  m_Size: {x: 0.6462457, y: 1.3298926}
   m_EdgeRadius: 0
 --- !u!1 &1141382646
 GameObject:
@@ -2494,12 +2494,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FinishButtonHandler
   dialogueManager: {fileID: 557035934}
-  quizzing: {fileID: 798112117}
   nextDialogue:
   - characterName: Aika
     line: "Allll righty, let\u2019s put your knowledge to the test!!"
     characterSprite: {fileID: -7309544048074622102, guid: c23082a6944716c42a4d0ecd2f5527f9, type: 3}
-  optionBoxes: {fileID: 0}
+  optionBoxes: {fileID: 1520850902}
+  quizzing: {fileID: 798112115}
 --- !u!1 &1259598577
 GameObject:
   m_ObjectHideFlags: 0

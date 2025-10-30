@@ -25,23 +25,32 @@ public class DraggingInteract : MonoBehaviour
     {
         dragging = false;
 
-        // Check if we’re over the target
-        Collider2D target = Physics2D.OverlapPoint(transform.position);
-        if (target != null && target.CompareTag(targetTag))
+        Vector2 pos = transform.position;
+        Collider2D[] hitsCircle = Physics2D.OverlapCircleAll(pos, 0);
+        Collider2D found = null;
+        foreach (var c in hitsCircle)
         {
-            // Interaction successful: destroy both
-            Destroy(target.gameObject);
+            if (c.CompareTag(targetTag))
+            {
+                found = c;
+                break;
+            }
+        }
+
+        if (found != null) //trigger an interaction
+        {
+            Destroy(found.gameObject);
             Destroy(gameObject);
             dialogue.StartDialogue(triggerDialogue);
         }
-        else
+        else //if not interactable, return to original position
         {
-            // Not over valid target return to original spot
             transform.position = originalPosition;
         }
 
         objectBeingDragged = null;
     }
+
 
     void Update()
     {
