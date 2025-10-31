@@ -8,22 +8,38 @@ public class clicking : MonoBehaviour
     private Dialogue dialogue;
     public Dialogue.DialogueLine[] triggerDialogue;
     private bool flag = false;
+    private AudioSource audioSource;
+
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         dialogue = FindObjectOfType<Dialogue>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void OnMouseDown()
     {
         if (newSprite != null) //if there's a new sprite attached to gameobject
         {
+            if (audioSource != null && audioSource.clip != null)
+            {
+                audioSource.PlayOneShot(audioSource.clip);
+            }
             spriteRenderer.sprite = newSprite;
         }
 
         if (destroyOnClick) //if the variable is checked off
         {
+            GameObject audioGO = GameObject.Find("scream");
+            if (audioGO != null)
+            {
+                audioSource = audioGO.GetComponent<AudioSource>();
+            }
+            if (audioSource != null && audioSource.clip != null)
+            {
+                audioSource.Play();
+            }
             dialogue.StartDialogue(triggerDialogue);
             Destroy(gameObject);
         }

@@ -8,11 +8,18 @@ public class DraggingInteract : MonoBehaviour
     private Dialogue dialogue;
     public Dialogue.DialogueLine[] triggerDialogue;
     public string targetTag = "Hole";
+    private AudioSource audioSource;
+
 
     void Start()
     {
         originalPosition = transform.position;
         dialogue = FindObjectOfType<Dialogue>();
+        GameObject audioGO = GameObject.Find("willypencil");
+        if (audioGO != null)
+        {
+            audioSource = audioGO.GetComponent<AudioSource>();
+        }
     }
 
     void OnMouseDown()
@@ -39,6 +46,10 @@ public class DraggingInteract : MonoBehaviour
 
         if (found != null) //trigger an interaction
         {
+            if (audioSource != null && audioSource.clip != null)
+            {
+                audioSource.Play();
+            }
             Destroy(found.gameObject);
             Destroy(gameObject);
             dialogue.StartDialogue(triggerDialogue);

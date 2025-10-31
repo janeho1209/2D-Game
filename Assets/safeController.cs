@@ -8,11 +8,18 @@ public class SafeController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Dialogue dialogue;
     public Dialogue.DialogueLine[] triggerDialogue;
+    private AudioSource audioSource;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         dialogue = FindObjectOfType<Dialogue>();
+        GameObject audioGO = GameObject.Find("open");
+        if (audioGO != null)
+        {
+            audioSource = audioGO.GetComponent<AudioSource>();
+        }
+
     }
 
     public void UserInput(int inputNumber)
@@ -23,6 +30,10 @@ public class SafeController : MonoBehaviour
 
             if (index >= correctCombo.Length) //correct sequence inputed opens safe
             {
+                if (audioSource != null && audioSource.clip != null)
+                {
+                    audioSource.Play();
+                }
                 spriteRenderer.sprite = openSafe;
                 dialogue.StartDialogue(triggerDialogue);
             }
