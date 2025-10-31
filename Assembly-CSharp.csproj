@@ -62,7 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\dialogue1.cs" />
-    <Compile Include="Assets\quizTime.cs" />
     <Compile Include="Assets\safeController.cs" />
     <Compile Include="Assets\safeNumbers.cs" />
     <Compile Include="Assets\draggingNoInteract.cs" />

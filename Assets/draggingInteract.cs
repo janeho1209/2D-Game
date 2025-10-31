@@ -22,7 +22,7 @@ public class DraggingInteract : MonoBehaviour
         }
     }
 
-    void OnMouseDown()
+    void OnMouseDown() //drag the object
     {
         dragging = true;
         objectBeingDragged = gameObject;
@@ -33,13 +33,13 @@ public class DraggingInteract : MonoBehaviour
         dragging = false;
 
         Vector2 pos = transform.position;
-        Collider2D[] hitsCircle = Physics2D.OverlapCircleAll(pos, 0);
+        Collider2D[] hitsCircle = Physics2D.OverlapCircleAll(pos, 0); //get a collection of the points around the cursor
         Collider2D found = null;
-        foreach (var c in hitsCircle)
+        foreach (var i in hitsCircle) //see if any of the points are on an interactable asset
         {
-            if (c.CompareTag(targetTag))
+            if (i.CompareTag(targetTag))
             {
-                found = c;
+                found = i;
                 break;
             }
         }
@@ -65,10 +65,10 @@ public class DraggingInteract : MonoBehaviour
 
     void Update()
     {
-        if (dragging)
+        if (dragging) //making sure the asset follows the cursor
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mousePos.z = 0; // keep on 2D plane
+            mousePos.z = 0;
             transform.position = mousePos;
         }
     }

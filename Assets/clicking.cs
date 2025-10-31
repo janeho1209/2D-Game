@@ -48,7 +48,7 @@ public class clicking : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (flag == false)
+        if (flag == false) //triggers dialogue only once and never again
         { 
             dialogue.StartDialogue(triggerDialogue);
             flag = true;

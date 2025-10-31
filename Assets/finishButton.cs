@@ -3,20 +3,17 @@ using UnityEngine.UI;
 
 public class FinishButtonHandler : MonoBehaviour
 {
-    [Header("Dialogue Settings")]
-    public Dialogue dialogueManager;             // Assign your Dialogue object in Inspector
-    public Dialogue.DialogueLine[] nextDialogue; // Dialogue to start when button is clicked
+    public Dialogue dialogueManager;
+    public Dialogue.DialogueLine[] nextDialogue;
     public GameObject optionBoxes;
     public GameObject quizzing;
     private Button button;
 
-    void Awake()
+    void Start()
     {
         button = GetComponent<Button>();
     }
-
-    // Call this from Dialogue when initial sequence ends
-    public void ShowButton()
+    public void ShowButton() //wanted to make it appear reappear, doesn't work :/
     {
         gameObject.SetActive(true);
     }
@@ -24,14 +21,9 @@ public class FinishButtonHandler : MonoBehaviour
 
     public void OnFinishButtonClicked()
     {
-        // Hide the Finish button
-        gameObject.SetActive(false);
+        gameObject.SetActive(false); //makes it disappear when clicked
 
-        // Trigger the next dialogue (if set)
-        dialogueManager.StartDialogue(nextDialogue);
-        quizzing.SetActive(true);
-
-        // Optional: enable player control or other interactions
-        // GameManager.Instance.EnablePlayerControl();
+        dialogueManager.StartDialogue(nextDialogue); //bring in dialogue
+        quizzing.SetActive(true); //start the quiz segment (theoretically...)
     }
 }

@@ -5,28 +5,24 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     [System.Serializable]
-    public struct DialogueLine
+    public struct DialogueLine //each struct should have these three things
     {
         public string characterName;
-        [TextArea(2, 5)] public string line;
-        public Sprite characterSprite; // portrait for each line
+        public string line;
+        public Sprite characterSprite;
     }
 
     public DialogueLine[] dialogueLines;
-
-    [Header("UI References")]
     public TMP_Text dialogueText;
     public TMP_Text nameText;
     public GameObject dialogueBox;
-    public Image characterImage; // assign UI Image for portrait
-
+    public Image characterImage;
     private int currentLine = 0;
     private bool dialogueActive = false;
 
     void Start()
     {
-        // Start sequence automatically for now
-        if (dialogueLines.Length > 0)
+        if (dialogueLines.Length > 0) //immediately start game with dialogue
         {
             StartDialogue();
         }
@@ -36,7 +32,7 @@ public class Dialogue : MonoBehaviour
     {
         if (!dialogueActive) return;
 
-        if (Input.GetMouseButtonDown(0)) // click to advance
+        if (Input.GetMouseButtonDown(0)) //each click brings in next line
         {
             NextLine();
         }
@@ -44,11 +40,15 @@ public class Dialogue : MonoBehaviour
 
     public void StartDialogue(DialogueLine[] newDialogueLines = null)
     {
-        if (newDialogueLines != null)
+        if (newDialogueLines != null) //to be or not to be
+        {
             dialogueLines = newDialogueLines;
+        }
 
         if (dialogueLines == null || dialogueLines.Length == 0)
+        {
             return;
+        }
 
         dialogueActive = true;
         dialogueBox.SetActive(true);
@@ -58,18 +58,14 @@ public class Dialogue : MonoBehaviour
 
     void ShowLine()
     {
-        DialogueLine line = dialogueLines[currentLine];
+        DialogueLine line = dialogueLines[currentLine]; //going thru the lines
         dialogueText.text = line.line;
         nameText.text = line.characterName;
 
-        if (line.characterSprite != null)
+        if (line.characterSprite != null) //displaying the character sprite
         {
             characterImage.sprite = line.characterSprite;
             characterImage.gameObject.SetActive(true);
-        }
-        else
-        {
-            characterImage.gameObject.SetActive(false);
         }
     }
 
@@ -92,8 +88,7 @@ public class Dialogue : MonoBehaviour
         characterImage.gameObject.SetActive(false);
         dialogueActive = false;
 
-        FinishButtonHandler finishButton = FindObjectOfType<FinishButtonHandler>();
-        if (finishButton != null)
-            finishButton.ShowButton();
+        FinishButtonHandler finishButton = FindObjectOfType<FinishButtonHandler>(); //wanted to make finish appear and reappear depending on dialogue playing, couldn't figure it out...
+        finishButton.ShowButton();
     }
 }

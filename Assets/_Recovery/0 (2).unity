@@ -1878,7 +1878,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 798112116}
-  - component: {fileID: 798112117}
   m_Layer: 5
   m_Name: quizzing
   m_TagString: Untagged
@@ -1906,78 +1905,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &798112117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798112115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 684a73a925487ae4093202cd039b1b38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueQuizHandler
-  quizOptions:
-  - {fileID: 1872752816}
-  - {fileID: 1218502826}
-  - {fileID: 1710982977}
-  quizButtonTexts:
-  - {fileID: 1457805108}
-  - {fileID: 1534971439}
-  - {fileID: 1467556988}
-  dialogue: {fileID: 557035934}
-  options: {fileID: 1520850902}
-  quizQuestions:
-  - questionCharacterName: Aika
-    questionText: 'First off: What game do I like to play?'
-    questionCharacterSprite: {fileID: -8782071862316022530, guid: fd4049e831e030545be9df92345087ea, type: 3}
-    options:
-    - Fireboy and Watergirl
-    - Dress to Impress
-    - Dark Souls III
-    correctOptionIndex: 1
-    correctResponse:
-      characterName: Aika
-      line: Correct!! Nice job!
-      characterSprite: {fileID: -4614859850992531460, guid: 241346c4312ec2b41a421b4572e768e7, type: 3}
-    incorrectResponse:
-      characterName: Aika
-      line: "Errr, li\u2019l off the mark, there\u2026"
-      characterSprite: {fileID: -7497107612607527052, guid: 6945781ea8cbfe44f94e893bd992e8d2, type: 3}
-  - questionCharacterName: Aika
-    questionText: Who else lives in this house with me?
-    questionCharacterSprite: {fileID: -8782071862316022530, guid: fd4049e831e030545be9df92345087ea, type: 3}
-    options:
-    - No one. There is definitely nothing in these walls.
-    - IDK LIKE AN APPALACHIAN CRYPTID I GUESS???
-    - Willy
-    correctOptionIndex: 2
-    correctResponse:
-      characterName: Aika
-      line: Correct!! Nice job!
-      characterSprite: {fileID: -4614859850992531460, guid: 241346c4312ec2b41a421b4572e768e7, type: 3}
-    incorrectResponse:
-      characterName: Aika
-      line: "Errr, li\u2019l off the mark, there\u2026"
-      characterSprite: {fileID: -7497107612607527052, guid: 6945781ea8cbfe44f94e893bd992e8d2, type: 3}
-  - questionCharacterName: Aika
-    questionText: "Aika: Aaand finally, the most difficult of all\u2026What\u2019s
-      my favorite animal?"
-    questionCharacterSprite: {fileID: -8782071862316022530, guid: fd4049e831e030545be9df92345087ea, type: 3}
-    options:
-    - Cat
-    - Car
-    - Cryolophosaurus
-    correctOptionIndex: 0
-    correctResponse:
-      characterName: Aika
-      line: Correct!! Nice job!
-      characterSprite: {fileID: -4614859850992531460, guid: 241346c4312ec2b41a421b4572e768e7, type: 3}
-    incorrectResponse:
-      characterName: Aika
-      line: "Errr, li\u2019l off the mark, there\u2026"
-      characterSprite: {fileID: -7497107612607527052, guid: 6945781ea8cbfe44f94e893bd992e8d2, type: 3}
 --- !u!1 &817672937
 GameObject:
   m_ObjectHideFlags: 0
